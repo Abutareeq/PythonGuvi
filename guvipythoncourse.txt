@@ -1,0 +1,718 @@
+print("hello ujde chaman")
+"""
+print("hello ujde chaman")
+print("hello ujde chaman")"""
+#ctrl+d -- For replicating the code
+"""
+fsjjfjfdjffj
+fsfklfjjjffjf
+fkljffjfjjjf
+iofjfjifsifiosdfk
+"""
+#"""___""" inverted coma is used as a multi line comments
+#if u put a = """ abcd.....""" now it will be count as a variable
+
+#DATA TYPE
+#there are three type of number we have in python
+#1}int - integer # a= 1
+#2}float - floating point( decimal ) #a= 1.0
+#3}complex - complex number #a= 1j (j is a imageneri part)
+
+#to check data type
+"""
+x = 1
+y = 1.0
+z = 1j
+print(type(x))
+print(type(y))
+print(type(z))
+the output of this 
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+"""
+
+#to convert one data type to another
+# convert from int to float
+"""a = float(x)
+print(a)
+convert float into int
+b = int(y)
+print(b)
+"""
+"""
+a = 5
+b = 4
+print(a)
+print(b)
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+output
+5
+4
+9
+1
+20
+1.25
+"""
+
+"""
+a = 4
+b = 2
+#addition
+x = (a+b)
+print(x)
+#substraction
+y = (a-b)
+print(y)
+#multiplication
+x = (a*b)
+print(x)
+#if u use ** then u get a to the power b
+x = (a**b)
+print(x)
+# division
+y = (a/b)
+print(y)
+#we can use % in a division to get remainder as a answer
+y = (a%b)
+print(y)
+#if u use // in divivsion u get an int without decimal
+y = (a//b)
+print(y)
+output
+6
+2
+8
+16
+2.0
+0
+2
+"""
+#Errors in Python- there are many type of error we may be face when we code in python
+## if u want to know search on net and some errors are mentioned below--
+#syntex error- when you forget about syntex(sign) like inverted coma, paranthesis
+#Index error- index position starts with 0-1-2-3 etc when u find somthing using index plosition and
+# u give a code out of index position then u face index error
+# moduleNotFoundError- when u give false name of module then it show this error
+
+# variable cant be started with number it can be started with onle text
+"""
+you can print multiple variable in a single code
+ex
+saparately define varaible
+x= "apple"
+y= "banana"
+z= "cat"
+print(x)
+print(y)
+print(z)
+the output will be
+apple
+banana
+cat
+"""
+#multiple variables in single code
+"""
+x,y,z = "dog","zirraf","tiger"
+print(x)
+print(y)
+print(z)
+
+output-
+dog
+zirraf
+tiger
+
+print(x,y,z)
+out put-
+dog zirraf tiger
+"""
+"""
+x=y=z= "abcd"
+print(x)
+print(y)
+print(z)
+output
+abcd
+abcd
+abcd
+"""
+
+#Strings- deal with text(string manipulation)
+"""python works on index position so if we give index position so it shows us the value which is lying on that 
+position. 'space also count in index position."""
+x = "hello, world"
+print(x[4])
+#the out put will be o becouse its on 4 position
+print(len(x))#to find the lenth of string
+#the output will be 12
+
+#"in" is a membership operator in any string- ye aapko btaega jo chij app search kr rhe ho wo variable me he
+# ki nhi. agr wo shabd sentence ya variable me hoga to ye true batayega varna false
+x="hello, kutte kamine"
+print("kutte" in x)
+print("rat" in x)
+#output-True
+#       False
+
+"""slicing- todna(variable ka ya string ka jo bhi selected hissa hne chahiya wo prapt krne ke liye
+isme hame first argument(point) se second argument(point) deni hoti he yad rhe second point count nhi hoga
+yad rhe shuruaat hamesha index position se hogi"""
+x="helloujadeaadmi"
+print(x[2:4])
+#output is ll because it is lying on 2and 3 index position but the second point(4) is not countable
+print(x[5:11])
+#output-ujadea
+#if u give an argument in minus then its run code from last index position ex-
+print(x[-7:-2])
+#output-deaad
+print(x.upper())
+print(x.lower())
+#output-HELLOUJADEAADMI
+#       helloujadeaadmi
+x="hello Barnagar        "
+print(x.strip())
+#output-hello Barnagar
+# u can remove backward space
+x="hello world"
+print(x.replace("h","y"))
+#output-yello world
+#we can replace anything with anything by using this. replace("jo replace krna he","jisse replace krna he")
+print(x.replace("hello","bye bye"))
+#output-bye bye world
+"""split is use for spliting"""
+x = "pythonlearner"
+print(x.split("l"))
+#output--['python', 'earner']
+
+a="hello"
+b="world"
+#if u want to give space between hello and world then we use space under invertade coma
+print(a+" "+b)
+#output-hello world
+
+
+"""conditional operators/logical operator"""
+"""
+a==b#a is equal to b
+a!=b#a is not equal to b
+a<b # a is less then b
+a>b#a is greater then b
+a<=b#a is less than equal to b
+a>=b#a is greater than equal to b
+"""
+"""if_else and elif statements"""
+a = 10
+b = 11
+if a>b:
+    print("a is greater than b")
+else:
+    print("b is greater than a")
+#output-b is greater than a
+a = 10
+b = 10
+if a>b:
+    print("a is greater than b")
+elif a==b:
+    print("both are equal")
+else:
+    print("b is greater than a")
+#output-both are equal
+
+#it can be possible that u can write a code in single line let see an ex-
+a=2
+b=4
+if a<b: print("b is greater than a")#output-b is greater than a
+
+"""we can do it within this manner"""
+print("a is big") if a>b else print("b is big")
+#output-b is big
+
+a=1
+b=2
+c=3
+if a>b and c>b: print("shsh") #and- conditional operator
+else: print("jkjk")
+#output-jkjk
+
+if a>b or c>b: print("abcd")
+else: print("uuu")
+#output is abcd
+'''
+name='Abutareeq'
+print(name.upper())
+output-ABUTAREEQ
+'''
+
+'''FUNCTIONS---blok of code hota jise ham kisi bhi naam se define kr skta he function use krne ke liye function ko
+call krna jauri hota he warna wo kamm nhi krta'''
+def trailfunction():#def(define) is a function. paranthesis must be used.
+    print("hello abu")
+trailfunction()#this is call. function ko call krna matlab 'run krne ke liye dobara likhna'
+#output-hello abu,, agar function ko call nhi kiya to output nhi aayeg
+"""
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the value that is sent to the function when it is called.
+"""
+"""FUNCTION KE ander(paranthesis ke andr) parameter(function me breket ke ander value ko paramerer khte he)
+ define krna for ex-"""
+def trailfunction(x):#hmne function ke ander argument x define kiya or call krte samay x ko yello define kye
+    print(x+" "+"dhoti")
+trailfunction("yello")
+#output-yello dhoti
+def abufunction(y):
+    print(y+" "+"a+b+c")
+abufunction("sum of var")
+#output-sum of var a+b+c
+def abufunction(x,y):
+    print(x+" "+y)
+abufunction("kala","kutta")#output--kala kutta
+
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+#output--Emil Refsnes
+        #Tobias Refsnes
+        #Linus Refsnes
+
+'''For & While loop'''
+#Repetitive execution of the same block of code over and over is referred to as iteration
+numbers = [1,2,3,4,5,67,89,100]
+for x in numbers:
+    print(x)
+'''output
+1
+2
+3
+4
+5
+67
+89
+100'''
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+'''output--
+apple
+banana
+cherry'''
+#if u want to break the loop at any perticuler condition then we use "if break condition".
+numbers = [1,2,3,4,5,67,89,100]
+for x in numbers:
+    print(x)
+    if x==5:#yaad rhe jo value aap de rhe he vo loop me honi chahiye arna ye break nhi hoga
+        break
+'''output--
+1
+2
+3
+4
+5'''
+
+numbers= [1,2,3,4,5,6]
+for x in numbers:
+    if x==3:
+        continue#With the continue statement we can stop the current iteration of the loop, and continue with the next
+    print(x)
+'''output--
+1
+2
+4
+5
+6'''
+#Do not print banana:
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+'''output--
+apple
+cherry'''
+
+for x in range(100):
+    print(x)
+'''output-- it will give u 0 to 99 number range
+but if u give it 2 ranges then it gives u between them. ex--'''
+for x in range(56, 67):
+    print(x)
+"""the output will be from 56 to 66"""
+x = 1
+while x<5:
+    print(x)
+    x += 1#"+=" is an operator it stands for value incriment like 1(value of x), 1+1=2, 2+1=3.....until 4
+          # because we give a condition x<5
+'''output--
+1
+2
+3
+4'''
+
+x = 71
+while x<75:
+    x += 1
+    print(x)
+'''output--
+72
+73
+74
+75'''
+
+'''we can also use "break & continue" arguments in while loop'''
+#Exit the loop when i is 3:
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+'''output--
+1
+2
+3'''
+#Continue to the next iteration if i is 3:
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+'''output--
+1
+2
+4
+5
+6'''
+#Example
+#Print a message once the condition is false:
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+'''output--
+1
+2
+3
+4
+5
+i is no longer less than 6'''
+
+"""FUCTIONS AS ARGUMENTS"""
+list = ['car','bike','plane',]
+def loop(x):
+    print(x*3)#by using x*3 we can print the value of x three time
+loop(list)
+#output--['car', 'bike', 'plane', 'car', 'bike', 'plane', 'car', 'bike', 'plane']
+lump = [2]
+def loop(x):
+    print(x*3)
+loop(lump)#output--[2, 2, 2]
+
+list = ['car','bike','plan']
+def loop(x):
+    print(x*3)
+
+def map_simple(crazy,list):
+    for items in list:
+        crazy(items)
+
+map_simple(loop,list)
+#output--carcarcar
+#       bikebikebike
+#       planplanplan
+
+"""LIST & LIST MATHODS"""
+#list is a sequence of items or sequence of object(string,Boolean,variables,numbers)
+# print(list)
+# print(len(list))
+# print(list[4])# its shows the forth number's(indexposition) item exist in list
+# print(list[2:5]) # slicing in list
+list = [2,4,5,'car','plan',0.5,True]
+list[3]='udantashtari'#we can replace from index position
+#we can try it with range also ex-- list[2:5]=['cake','cat',False]
+print(list)#output--[2, 4, 5, 'udantashtari', 'plan', 0.5, True]
+list.insert(2,'jeep')#to insert any item on perticuler index position without any replacment(indexpos,insertitemname)
+print(list)#output--[2, 4, 'jeep', 5, 'udantashtari', 'plan', 0.5, True]
+
+"""TUPLE()"""
+'''tuple and list both very similar to each other but the difference between tuple an list is tuple cannot be changed.
+its unchangeable. tuple cannot be modified but list can be modified.'''
+'''a tuple contain 2 or more than 2 value in () othewise. it cannot be called tuple. it become string.'''
+bubble = ('app','ball','code','java','ruby')
+"""bubble = ('app')
+print(type(bubble))#output--str
+bubble = ('app',)
+print(type(bubble))#output--tupel# because we use ","."""
+print(type(bubble))#output-tuple
+print(len(bubble))#output-5
+print(bubble[2:4])#we can do slicing we can find index position
+
+
+"""DICTIONARIES"""
+# unchangeable,unordered ane don't allow duplicate values
+
+dict = {
+    "Name" : 'Abu Tareeq Shaikh',
+    "Age"  : 26,
+   "mobile": 9669900381,
+}
+print(dict)
+print(len(dict))
+#u can access perticular key value
+x=dict["Age"]
+print(x)#output--26
+dict["Age"] = 27 # by using this u can replace the value and add the value
+dict["class"] = "graduate"#{'Name': 'Abu Tareeq Shaikh', 'Age': 27, 'mobile': 9669900381, 'class': 'graduate'}
+print(dict)#output--{'Name': 'Abu Tareeq Shaikh', 'Age': 27, 'mobile': 9669900381}
+
+
+marks = {"abu":9,"muzammil":5,'faizan':5,"Vasefa":8,'indris':4,'mubashera':7,'iram':6,'saeed':5}
+print(marks["abu"])#output-9
+print(marks['iram'])#output-6
+marks["Alhumd"]=8 #add in dictionary
+print(marks)
+#output-{'abu': 9, 'muzammil': 5, 'faizan': 5, 'Vasefa': 8, 'indris': 4, 'mubashera': 7, 'iram': 6, 'saeed': 5, 'Alhumd': 8}
+print(marks.get('iram'))#output-6
+#we can get perticuler marks by using both 'print(marks['iram']) & 'print(marks.get('iram')). but the difference is we
+# dont use inbuilt get function and make a mistake it shows error ex 'print(marks['irum']) the output-error
+# if v use get it shows the output- None
+print(marks.values())#output-dict_values([9, 5, 5, 8, 4, 7, 6, 5, 8])
+print(marks.keys())#output- dict_keys(['abu', 'muzammil', 'faizan', 'Vasefa', 'indris', 'mubashera', 'iram', 'saeed', 'Alhumd'])
+print(marks.items())#it shows keys and values in tuple forms
+#dict_items([('abu', 9), ('muzammil', 5), ('faizan', 5), ('Vasefa', 8), ('indris', 4), ('mubashera', 7), ('iram', 6), ('saeed', 5), ('Alhumd', 8)])
+
+
+"""LIST COMPREHENSION-- convert a block of code into single line--"""
+fruits=["apple","kiwi","banana","mango"]
+#ye ek fruits ki list he me chata hu ki ek nai list banau jisme purani ke falo ke nam ho jinke naam me a aarha ho
+newfruit=[]
+for x in fruits:
+    if "a" in x:
+        newfruit.append(x)
+print(newfruit)#output--['apple', 'banana', 'mango']
+
+for x in fruits:
+    if "i" in x:
+        newfruit.append(x)
+print(newfruit)#output-['kiwi']
+
+''' this is block of code. now in single line code ex--'''
+fruits=["apple","kiwi","banana","mango"]
+newfruit=[x for x in fruits  if "i" in x]
+print(newfruit)#output-['kiwi']
+
+newfruit=[x for x in fruits  if x != "banana"] # != --is not equal to banana
+print(newfruit)#output-['apple', 'kiwi', 'mango']
+
+number = [x for x in range(11)]
+print(number)# output-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+number = [x for x in range(11) if x<6]
+print(number)# output-[0, 1, 2, 3, 4, 5]
+
+newfruit=[x.upper() for x in fruits]
+print(newfruit)# output-['APPLE', 'KIWI', 'BANANA', 'MANGO']
+
+
+'''class object creation me hamari madad krti he or python me her chij object mani jati he'''
+#class ko banane ke lye class word ka use hota he
+class Human:
+    x=4
+
+h1=Human()
+print(h1.x)
+#output 4
+
+'''__init__() - its an inbuilt function.'''
+
+class human:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+h1=human('shanti',66)
+
+print(h1.name)
+print(h1.age)
+#output- shanti
+#       66
+
+class human:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def mathods(self):
+        print("Hi, my name is "+ self.name)
+
+h1=human('shanti',66)
+h2=human('hurdang',32)
+
+h1.mathods()
+h2.mathods()
+#output-Hi, my name is shanti
+#       Hi, my name is hurdang
+
+class human:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def mathods(self):
+        print("Hi, my name is "+ self.name)
+
+h1=human('shanti',66)
+h1.mathods()
+
+h1.name='tareeq'
+h1.age=27
+
+h1.mathods()
+#output-Hi, my name is tareeq
+del h1#by using del we can delete variable.now if we want to print h1 it couldnt print
+
+#empty class nhi bna sakte agr banana hoto "pass" function dena hota he.-ex-
+class human:
+    pass
+
+"""Lembda, Filters & Maps"""
+"""In lambda function we can use many arguments but only one maths expression"""
+x=lambda a:a+25
+print(x(5))#output is 30
+#the argument is a and expression is a+25.
+#for multiple argument(a,b) but expression(a+b) would be once
+x=lambda a,b:a+b
+print(x(5,35))#output is 40
+
+#we can use lambda in function
+def f(n):
+    return lambda a:a*n
+
+doub=f(2)#for double the value of a
+
+print(doub(11))#output is 22
+
+def f(n):
+    return lambda a:a*n
+
+doub=f(3)#for triple the value of a
+
+print(doub(11))#output is 33
+
+"""Filters function"""
+#in filters u can get answers onle in true or false form
+#let find a prime numbers using filter
+def prime(x):
+    for n in range(2,x):
+        if x%n==0:
+            return False
+        else:
+            return True
+
+#tareeq naam ka ek function banate he
+tareeq= filter(prime,range(10))# range me hame argument me wo no. dena he jiska hame pata krna he
+print('prime numbers are ', list(tareeq))
+#output-prime numbers are  [3, 5, 7, 9]
+
+
+"""MAP-map function only use in sequence"""
+def square(x):
+    return x*x
+
+numbers=[1,2,3,4,5]
+
+listsquare=map(square,numbers)
+print(list(listsquare))
+#output-[1, 4, 9, 16, 25]
+
+
+'''READ EXCEL DATA IN PYTHON'''
+import xlrd
+
+#file ki location dena hogi to ek loc variable me store krenge location-
+loc = ('C:\\Users\\hp\\Downloads\\practice excel')# '\' ek escape character he isliye hm use krenge '\\'
+
+wb = xlrd.open_workbook(loc)
+
+sheet = wb.sheet_by_index(0)#index value matters in python so 0 means 1 sheet
+
+print(sheet.cell_value(3,3)) # (3,3) means 3rd column and 3rd row its a index position
+
+print(sheet.ncols)#mean number of column
+print(sheet.nrows)# means number of rows
+
+
+"""ITERATOR IN PYTHON --> iterator is like an object jo ki iterable sequence ke uper iterat krta he just like tuple list"""
+#Iteration ke liye hame 2 fuction use krte he --> iter & next
+# for ex-->
+'''iteration with tuple'''
+tuple1 = ('car','bike','train')
+
+myit = iter(tuple1)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+#Output- car
+#        bike
+#        train
+
+'''Iteration with string'''
+striing = 'Tareeq'
+
+myit = iter(striing)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+# Output -->T
+#           a
+#           r
+#           e
+#           e
+#           q
+
+'''for loop bhi iteration hi krta he agr app chahe to for loop use kr sktee he'''
+tuple1 = ('car','bike','train')
+for x in tuple1:
+    print(x)
+# output -->car
+#           bike
+#           train
+
+'''Class ko bhi as a iterator use ki ja skti he'''
+class mynumber:
+    def __iter__(self):
+        self.a = 1
+        return self
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+
+myclass = mynumber()
+myiter = iter(myclass)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+# output --> 1
+# 2
+# 3
+# 4
+# 5
+
+
